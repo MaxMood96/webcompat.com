@@ -6,9 +6,10 @@ Flask-Limiter==1.4
 Flask-SQLAlchemy==2.4.4
 Flask-WTF==0.15.1
 GitHub-Flask==3.2.0
-Pillow==9.0.1
+Pillow==9.2.0
 python-dotenv==0.15.0
 requests==2.25.1
 ua-parser==0.10.0
 Werkzeug==2.0.1
 WTForms==2.3.3
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
