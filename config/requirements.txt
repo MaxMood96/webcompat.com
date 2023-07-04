@@ -9,7 +9,7 @@ GitHub-Flask==3.2.0
 google-cloud-bigquery==3.11.1
 Pillow==9.3.0
 python-dotenv==0.15.0
-requests==2.25.1
+requests==2.31.0
 ua-parser==0.10.0
 Werkzeug==2.0.1
 WTForms==2.3.3
