@@ -24,7 +24,8 @@
     "cssrecipes-utils": "^0.6.2",
     "suitcss-utils-align": "^1.0.0",
     "suitcss-utils-display": "^1.0.2",
-    "ua-parser-js": "^1.0.2"
+    "ua-parser-js": "^1.0.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -87,7 +88,8 @@
     "dev": "webpack --config ./webpack/webpack.dev.js --watch",
     "prod": "webpack --config ./webpack/webpack.prod.js && npm run prod:es5",
     "prod:es5": "webpack --config ./webpack/webpack.prod.js --env es5",
-    "prepare": "husky install"
+    "prepare": "npm run snyk-protect && husky install",
+    "snyk-protect": "snyk-protect"
   },
   "lint-staged": {
     "*.js": [
@@ -97,5 +99,6 @@
       "stylelint './webcompat/static/css/src/**/*.css' './webcompat/static/css/webcompat.dev.css'"
     ]
   },
-  "license": "MPL-2.0"
+  "license": "MPL-2.0",
+  "snyk": true
 }
